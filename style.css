@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1177px;
+}
+.card{
+    background-color: #f2f1f1;
+    border-radius: 1.2rem;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+.card:hover{
+    background-color: black;
+    color: #fff;
+}
+.bi{
+    font-size: 40px;
+}
+    /* Base styles for the dropdown menu */
+    .dropdown {
+        position: relative;
+      }
+    
+      /* Hide the checkboxes */
+      input[type="checkbox"] {
+        position: absolute;
+        opacity: 0;
+      }
+    
+      /* Styles for the first level */
+      .dropdown > ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+      }
+    
+      /* Show the first level when checkbox is checked */
+      .dropdown > input[type="checkbox"]:checked ~ ul {
+        display: block;
+      }
+    
+      /* Styles for the second level */
+      .dropdown > ul > li > ul {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+      }
+    
+      /* Show the second level when checkbox is checked */
+      .dropdown > ul > li > input[type="checkbox"]:checked ~ ul {
+        display: block;
+      }
